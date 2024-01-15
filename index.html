@@ -32,8 +32,13 @@
             flex: 1;
         }
 
+        .flex-body {
+            display: flex;
+            flex-direction: row;
+        }
+
+
         aside {
-            width: 200px;
             padding: 15px;
         }
 
@@ -43,13 +48,25 @@
         }
 
         .image-container {
-            max-width: 100%;
+            width: fit-content;
+            flex-direction: column;
             height: auto;
         }
 
         .image {
-            max-width: 65%;
+            width: 120vh;
             height: auto;
+        }
+
+        .right-body {
+            padding: 16px;
+            flex-direction: row;
+        }
+
+        .btn-add {
+            font-size: medium;
+            padding-left: 100px;
+            padding-right: 100px;
         }
 
         .svg {
@@ -57,10 +74,16 @@
             width: 48px;
             height: 48px;
         }
+
+        .album-image {
+            height: auto;
+            padding-top: 16px;
+            width: 276px;
+        }
     </style>
 </head>
 <body>
-<div class="bg-dark">
+<div class="bg-black">
     <!-- Header -->
     <header>
         <a href="#" class="navbar-brand">Andie Mackenzie</a>
@@ -125,10 +148,20 @@
 
         <!-- Main Content -->
         <main>
-            <!-- Image -->
-            <div class="image-container">
-                <img class="image" src="afterthought1.jpeg" alt="Andie Image">
+            <div class="flex-body">
+                <div class="image-container">
+                    <img class="image" src="andie.JPG" alt="Andie Image">
+                </div>
+                <!-- New album area-->
+                <div class="right-body pt-16">
+                    <a class="btn-add btn btn-secondary btn-lg bg-white text-black rounded-0" href="#">
+                        <span>New Song</span>
+                    </a>
+                    <img class="album-image" src="afterthought1.jpeg" alt="new album image">
+                </div>
             </div>
+            <!-- Image -->
+
         </main>
 
     </div>
