@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website</title>
 
     <!-- Bootstrap CSS -->
@@ -11,8 +11,9 @@
 
     <!-- Custom CSS for styling -->
     <style>
-
-        @media screen and (max-width: 481px) {
+        @viewport {
+            width: device-width;
+            zoom: 1.0;
         }
         /* Add your custom styles here */
         body {
@@ -63,7 +64,9 @@
 
         .right-body {
             padding: 16px;
-            flex-direction: row;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         .btn-add {
