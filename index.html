@@ -18,7 +18,7 @@
         /* Add your custom styles here */
         body {
             display: flex;
-            min-height: 100%;
+            height: 100%;
             flex-direction: column;
         }
 
@@ -27,7 +27,7 @@
             padding: 8px;
             padding-top: 16px;
             color: white;
-            font-size: 40px;
+            font-size: 3rem; /* Default font size */
             font-family: "Marhey";
         }
 
@@ -71,8 +71,8 @@
 
         .btn-add {
             font-size: medium;
-            padding-left: 100px;
-            padding-right: 100px;
+            padding-left: 10vw;
+            padding-right: 10vw;
         }
 
         .svg {
@@ -156,14 +156,14 @@
         <main>
             <div class="flex-body">
                 <div class="image-container">
-                    <img class="image" src="andie.JPG" alt="Andie Image">
+                    <img class="image img-fluid" src="andie.JPG" alt="Andie Image">
                 </div>
                 <!-- New album area-->
-                <div class="right-body pt-16">
+                <div class="right-body pt-4 pt-md-16">
                     <a class="btn-add btn btn-secondary btn-lg bg-white text-black rounded-0" href="#">
                         <span>New Song</span>
                     </a>
-                    <img class="album-image" src="afterthought1.jpeg" alt="new album image">
+                    <img class="album-image img-fluid mt-4 mt-md-0" src="afterthought1.jpeg" alt="new album image">
                 </div>
             </div>
             <!-- Image -->
