@@ -21,11 +21,13 @@
         /* Add your custom styles here */
         body {
             display: flex;
-            height: 100%;
+            height: auto;
+            width: fit-content;
             flex-direction: column;
         }
 
         header {
+            display: fit-content;
             text-align: center;
             padding: 8px;
             padding-top: 16px;
@@ -40,7 +42,7 @@
         }
 
         .flex-body {
-            display: flex;
+            display: fit-content;
             flex-direction: row;
         }
 
@@ -55,28 +57,34 @@
         }
 
         .image-container {
-            width: 100%;
-            padding: 10px;
+            width: fit-content; 
+            padding: 1vw;
             flex-direction: column;
             height: auto;
         }
 
         .image {
-            width: 100%;
+            width: auto;
+            max-width: 100%;
             height: auto;
         }
 
         .right-body {
+            display: flex;
+            height: fit-content;
+            width: auto;
             padding: 8px;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             text-align: center;
         }
 
         .btn-add {
-            font-size: medium;
+            font-size: 1rem;
             padding-left: 10vw;
             padding-right: 10vw;
+            height: fit-content;
+            width: auto;
         }
 
         .svg {
@@ -88,8 +96,11 @@
 
         .album-image {
             height: auto;
-            padding-top: 16px;
-            width: 25vw;
+            max-height: 45vh;
+            padding-top: 8px;
+            padding-left: 10px;
+            width: auto;
+            max-width: 45vw;
         }
     </style>
 </head>
@@ -165,10 +176,10 @@
                 </div>
                 <!-- New album area-->
                 <div class="right-body pt-4 pt-md-16">
-                    <a class="btn-add btn btn-secondary btn-lg bg-white text-black rounded-0" href="#">
-                        <span>New Song</span>
+                    <a class="btn-add btn btn-secondary btn-lg bg-white text-black rounded-0" href="https://songwhip.com/andiemackenzie/autumn-innocence">
+                        <span>Autumn Innocence</span>
                     </a>
-                    <img class="album-image img-fluid mt-4 mt-md-0" src="afterthought1.jpeg" alt="new album image">
+                    <img class="album-image img-fluid mt-4 mt-md-0" src="autumninnocence.jpg" alt="new album image">
                 </div>
             </div>
             <!-- Image -->
